@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-bg text-text font-sans;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Primary Button */
+  .btn-primary {
+    @apply bg-gradient-to-r from-primary to-accent text-white font-semibold px-6 py-3 rounded-lg transition-all duration-300 hover:shadow-neon hover:scale-105 active:scale-95;
+  }
+
+  /* Secondary Button */
+  .btn-secondary {
+    @apply border border-primary text-primary font-medium px-6 py-3 rounded-lg transition-all duration-300 hover:bg-primary hover:text-white;
+  }
+
+  /* Glass Card */
+  .glass-card {
+    @apply bg-glass backdrop-blur-md border border-border rounded-xl shadow-glass;
+  }
+
+  /* Hero Gradient */
+  .hero-gradient {
+    background: radial-gradient(
+      circle at center,
+      rgba(0, 212, 255, 0.25) 0%,
+      rgba(124, 58, 237, 0.2) 40%,
+      transparent 70%
+    );
+  }
+
+  /* Gradient Text */
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+  }
+}
+
+@layer utilities {
+  .shadow-glow {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+  }
+
+  .shadow-glow-accent {
+    box-shadow: 0 0 20px rgba(124, 58, 237, 0.5);
+  }
+
+  /* Strong Neon Effect */
+  .shadow-neon {
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.6), 0 0 40px rgba(0, 212, 255, 0.4);
+  }
+}
+
+/* Custom Scrollbar (Webkit Browsers) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: theme("colors.bg");
+}
+
+::-webkit-scrollbar-thumb {
+  background: theme("colors.primary / 0.3");
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: theme("colors.primary / 0.5");
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+
+/* Autofill style fix for dark inputs */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0.05) inset !important;
+  -webkit-text-fill-color: #fff !important;
+  transition: background-color 5000s ease-in-out 0s;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+

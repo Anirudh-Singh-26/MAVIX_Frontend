@@ -1,0 +1,18 @@
+/* Keep only minimal overrides, remove boilerplate */
+
+#root {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrollbars */
+}
+
+/* If you still use logos somewhere */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  transition: filter 300ms;
+  will-change: filter;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em rgba(0, 212, 255, 0.6));
+}

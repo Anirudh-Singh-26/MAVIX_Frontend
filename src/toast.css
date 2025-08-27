@@ -1,0 +1,23 @@
+/* Base toast */
+.custom-toast {
+  background-color: #0F0F1A !important; /* surface */
+  color: #FFFFFF !important; /* text */
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.3) !important; /* neon shadow */
+  border-radius: 0.75rem !important; /* rounded-xl */
+  padding: 1rem !important;
+  font-family: 'Inter', sans-serif !important;
+}
+
+/* Toast body */
+.custom-toast-body {
+  color: #B8BCC8 !important; /* text-muted */
+  font-size: 0.875rem !important; /* text-sm */
+}
+
+/* Progress bar */
+.custom-toast-progress {
+  background-color: #00D4FF !important; /* primary cyan */
+  height: 4px !important;
+  border-radius: 9999px !important;
+}
