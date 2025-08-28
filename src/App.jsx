@@ -15,12 +15,26 @@ import "react-toastify/dist/ReactToastify.css";
 import "./toast.css"; // <--- custom styles for toast
 import { useEffect } from "react";
 import { toast } from "react-toastify";
+import axios from "axios";
 
 function App() {
-
   useEffect(() => {
     toast.success("🚀 Test toast works!");
   }, []);
+
+  useEffect(()=>{
+    const fetch = async () => {
+      try {
+        const response = await axios.get(
+          `${import.meta.env.VITE_BACKEND_URL}/ping`
+        );
+      } catch (e) {
+        console.log(e);
+      }
+    }
+    fetch();
+  }, []);
+
   return (
     <Router>
       <ScrollToTop />
