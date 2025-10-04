@@ -14,8 +14,8 @@ Built with **React**, **Vite**, and **Tailwind CSS**, it is fully responsive and
 
 ## 🔗 Related Repositories
 
-* **MAVIX Dashboard** - [https://github.com/Anirudh-Singh-26/Mavix-dashboard](https://github.com/Anirudh-Singh-26/Mavix-dashboard)
-* **MAVIX Backend** - [https://github.com/Anirudh-Singh-26/Mavix-backend](https://github.com/Anirudh-Singh-26/Mavix-backend)
+* **MAVIX Dashboard** - [https://github.com/Anirudh-Singh-26/MAVIX_Dashboard](https://github.com/Anirudh-Singh-26/MAVIX_Dashboard)
+* **MAVIX Backend** - [https://github.com/Anirudh-Singh-26/MAVIX_BACKEND](https://github.com/Anirudh-Singh-26/MAVIX_BACKEND)
 
 ---
 
